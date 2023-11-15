@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.react-draggable,
+.cursor {
+    cursor: move;
+}
+.no-cursor {
+    cursor: auto;
+}
+.cursor-y {
+    cursor: ns-resize;
+}
+.cursor-x {
+    cursor: ew-resize;
+}
+
+.react-draggable strong {
+    background: #ddd;
+    border: 1px solid #999;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+.box {
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    width: 110px;
+    margin: 5px 5px 15px 5px;
+    padding: 5px;
+    float: left;
+}
+.no-pointer-events {
+    pointer-events: none;
+}
+.hovered {
+    background-color: gray;
+}
+.react-draggable .group-btn {
+    display: flex;
+}
+
+#divcontents {
+    padding: 0 !important;
+    /* margin-left: 40%; */
+}
+@media print {
+    @page {
+        /* size: 80mm 50; */
+        margin: 0;
+        padding: 0;
+    }
+}
+.customsize-datepicker > div > input {
+    padding: 8.5px 14px;
+}
+.ban-co-khach {
+    background-color: rgb(106, 168, 248);
+}
+
+.ban-trong {
+    background-color: white;
+}
+
+.ban-in-tam {
+    color: yellow;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.react-draggable span {
+    border-bottom: 1px solid black;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table.data-print, table.data-sign {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 10px;
+}
+
+.data-print > tbody > tr > td,
+.data-print tr > th {
+    border: 1px solid #dddddd;
+    padding-left: 5px;
+}
+
+.data-print > tbody > tr > td:last-child,
+.data-print > tr > td:last-child {
+    padding-right: 10px;
+}
+
+.data-sign > tbody > tr > td,
+.data-sign tr > th {
+    padding-left: 5px;
+}
+.txt-footer {
+    font-size: 16px !important;
+    color: black !important;
+}
+.pt-1 {
+    padding-top: 8px !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.invalid-km > td {
+    color:  red;
+}
+
+.border-row-table {
+    border-top: 1px solid rgba(224, 224, 224, 1);
+    border-right: 1px solid rgba(224, 224, 224, 1);
+    border-left: 1px solid rgba(224, 224, 224, 1);
+}
+.pswp-gallery > a.border-img > img {
+    padding: 5px 5px;
+    border: 1px solid rgba(224, 224, 224, 1);
+    margin-right: 5px;
+}
+.pswp__img {
+    width: auto !important;
+}
+.ck.ck-balloon-panel {
+    z-index: 9999999999999999999999 !important;
+}
