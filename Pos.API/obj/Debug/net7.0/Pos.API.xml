@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Pos.API</name>
+    </assembly>
+    <members>
+        <member name="M:Pos.API.Application.Features.DonHang.Commands.AddDonHangCommand.Handler.HandleUpdateOrder(Pos.API.Application.Features.DonHang.Commands.AddDonHangCommand.AddDonHangRequest,T_DonHang)">
+            <summary>
+            Update ordred
+            </summary>
+            <param name="request"></param>
+            <param name="donHang"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Application.Features.DonHang.Commands.AddDonHangCommand.Handler.HandleAddNewOrderAsync(Pos.API.Application.Features.DonHang.Commands.AddDonHangCommand.AddDonHangRequest)">
+            <summary>
+            Handle create new order.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Common.Utilities.GetStringArray(System.String)">
+            <summary>
+            Convert a string to an array using the default separator ',' 
+            </summary>
+            <param name="keyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Common.Utilities.GetStringArray(System.String,System.Char)">
+            <summary>
+            Convert a string to an array using the separator
+            </summary>
+            <param name="keyName"></param>
+            <param name="separator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Common.Utilities.FormatCode(System.String,System.Int32,System.String)">
+            <summary>
+            Format code primary key
+            Example: HD0001, KH00001
+            </summary>
+            <param name="prefix"></param>
+            <param name="length"></param>
+            <param name="currentcode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Pos.API.Constans.CmContext">
+            <summary>
+            Common Context for define some text
+            </summary>
+        </member>
+        <member name="M:Pos.API.Controllers.DanhMucController.Add(Pos.API.Application.Features.DanhMuc.Commands.AddDanhMucCommand.AddDanhMucRequest)">
+            <summary>
+            Return 0: Don Vi is not exists, 1 save success
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.DanhMucThuChiController.Add(Pos.API.Application.Features.DanhMucThuChi.Commands.AddDanhMucThuChiCommand.AddDanhMucThuChiRequest)">
+            <summary>
+            Return 0: is not exists, 1 save success
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetAllOutletByDonViMobile">
+            <summary>
+            Get all outlet by id Donvi
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetOutletByIdMobile(Pos.API.Application.Features.Outlet.Queries.GetOutletQueries.GetOutletById.OutletReq)">
+            <summary>
+            Get all outlet Don Vi by id outlet
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetThucDonMatHangByDonViMobile(System.Int32)">
+            <summary>
+            Get menu by id Don Vi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetTableOrderedMobile(User.API.Application.Features.DonHang.Queries.GetTableOrderedByTableNo.QueryOrderedTableNo)">
+            <summary>
+            Get infor table ordered
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetListKhByLoaiKHThanhToanMobile(System.Int32)">
+            <summary>
+            Get all customer by type
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetHtttByDonViMobile">
+            <summary>
+            Get all payment method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetAllEmployeeDonViMobile">
+            <summary>
+            Get all Thu Ngan, Phuc Vu of Don Vi
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetMDataByGroupData(User.API.Application.Features.MData.Queries.GetMDataByGroupNameQuery.RequestGroupData)">
+            <summary>
+            Get data by group name
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.CreateOrderMobile(Pos.API.Application.Features.DonHang.Commands.AddDonHangCommand.AddDonHangRequest)">
+            <summary>
+            Create and Update order
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetAllBillMobile(Pos.API.Application.Features.PostBill.Queries.GetAllBillByDonViQuery.QueryBillDv)">
+            <summary>
+            Get all bills
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.PaymentOrder(Pos.API.Application.Features.PostBill.Commands.PaymentCommand.PaymentRequest)">
+            <summary>
+            Api thanh toán
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.DeleteBillMobile(Pos.API.Application.Features.PostBill.Commands.DeleteBillCommand.DeleteDHRequest)">
+            <summary>
+            Api delete bill
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.MobileController.GetDoanhThuTongQuan(Pos.API.Application.Features.BaoCao.Queries.DoanhThu.GetBaoCaoDoanhThuTongQuan.TongQuanRq)">
+            <summary>
+            Report Doanh Thu
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.PhieuThuChiController.AddPhieuThu(System.String,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Return 0: not exists, 1 save success
+            Loai_PhieuThuChi 1:  Phiếu thu
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.PhieuThuChiController.UpdatePhieuThuChi(System.String,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Return 0: not exists, 1 save success
+            Loai_PhieuThuChi 1:  Phiếu thu
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.PrinterController.Add(Pos.API.Application.Features.Printer.Commands.AddPrinterCommand.AddPrinterRequest)">
+            <summary>
+            Return 0: printer is not exists, 1 save success
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.UserController.ForgotPassword(Pos.API.Application.Features.VerifyCode.Commands.ForgetPasswordCommand.UpdatePasswordRequest)">
+            <summary>
+            Forgot password
+            return: 0 user not found, 1 success, -1 confirm code is not exists or expired
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.UserController.GetUserById(Pos.API.Application.Features.User.Queries.GetUserByIdQuery.QueryById)">
+            <summary>
+            Forgot password
+            return: 0 user not found, 1 success, -1 confirm code is not exists or expired
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.UserController.ChangePassword(Pos.API.Application.Features.VerifyCode.Commands.ChangePasswordCommand.ChangePasswordRequest)">
+            <summary>
+            Update password
+            return: 0 user not found, 1 success, -1 confirm code is not exists or expired
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Controllers.VerifyCodeController.SendCodeForgotPassword(Pos.API.Application.Features.VerifyCode.Commands.UpdateVerifyCodeCommand.AddCodeRequest)">
+            <summary>
+            Send code in case forgot password
+            Return 0: User is not exists in system, 1 code sent
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Infrastructure.Repositories.DonHangRepository.HandleStringThoiGian(System.String,System.String,System.String)">
+            <summary>
+            Handle thời gian kỳ bình thường
+            </summary>
+            <param name="thoiGian"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pos.API.Infrastructure.Repositories.DonHangRepository.HandleStringThoiGianKySoSanh(System.String,System.String,System.String)">
+            <summary>
+            Handle thời gian kỳ so sánh
+            </summary>
+            <param name="thoiGian"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
